@@ -9,7 +9,7 @@ import safeforhall.logic.commands.exceptions.CommandException;
 import safeforhall.logic.parser.exceptions.ParseException;
 import safeforhall.model.Model;
 import safeforhall.model.ReadOnlyAddressBook;
-import safeforhall.model.person.Person;
+import safeforhall.model.resident.Resident;
 
 /**
  * API of the Logic component
@@ -31,8 +31,8 @@ public interface Logic {
      */
     ReadOnlyAddressBook getAddressBook();
 
-    /** Returns an unmodifiable view of the filtered list of persons */
-    ObservableList<Person> getFilteredPersonList();
+    /** Returns an unmodifiable view of the filtered list of residents */
+    ObservableList<Resident> getFilteredResidentList();
 
     /**
      * Returns the user prefs' address book file path.

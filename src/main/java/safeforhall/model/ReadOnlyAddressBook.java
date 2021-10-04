@@ -1,7 +1,7 @@
 package safeforhall.model;
 
 import javafx.collections.ObservableList;
-import safeforhall.model.person.Person;
+import safeforhall.model.resident.Resident;
 
 /**
  * Unmodifiable view of an address book
@@ -9,9 +9,9 @@ import safeforhall.model.person.Person;
 public interface ReadOnlyAddressBook {
 
     /**
-     * Returns an unmodifiable view of the persons list.
-     * This list will not contain any duplicate persons.
+     * Returns an unmodifiable view of the residents list.
+     * This list will not contain any duplicate residents.
      */
-    ObservableList<Person> getPersonList();
+    ObservableList<Resident> getResidentList();
 
 }

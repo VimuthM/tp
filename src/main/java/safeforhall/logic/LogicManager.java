@@ -14,7 +14,7 @@ import safeforhall.logic.parser.AddressBookParser;
 import safeforhall.logic.parser.exceptions.ParseException;
 import safeforhall.model.Model;
 import safeforhall.model.ReadOnlyAddressBook;
-import safeforhall.model.person.Person;
+import safeforhall.model.resident.Resident;
 import safeforhall.storage.Storage;
 
 /**
@@ -60,8 +60,8 @@ public class LogicManager implements Logic {
     }
 
     @Override
-    public ObservableList<Person> getFilteredPersonList() {
-        return model.getFilteredPersonList();
+    public ObservableList<Resident> getFilteredResidentList() {
+        return model.getFilteredResidentList();
     }
 
     @Override
